@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="bancoexpenseonEntities-Web.config Connection String" description="bancoexpenseonEntities A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=den1.mssql8.gear.host;initial catalog=bancoexpenseon;persist security info=True;user id=bancoexpenseon;password=expense@1975;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\alexm\\source\\repos\\APIExpenseon\\APIExpenseon\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='bancoexpenseonEntities']/@connectionString" />
+  </parameter>
+</parameters>

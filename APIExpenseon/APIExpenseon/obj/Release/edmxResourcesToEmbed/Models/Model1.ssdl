@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bancoexpenseonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HOTEL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="RES_HOTEL" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ESTRELAS" Type="tinyint" Nullable="false" />
+    <Property Name="LOGRADOURO" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="NUMERO" Type="int" Nullable="false" />
+    <Property Name="BAIRRO" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CIDADE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ESTADO" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ESTACIONAMENTO" Type="bit" Nullable="false" />
+    <Property Name="PISCINA" Type="bit" Nullable="false" />
+    <Property Name="SAUNA" Type="bit" Nullable="false" />
+    <Property Name="WIFI" Type="bit" Nullable="false" />
+    <Property Name="RESTAURANTE" Type="bit" Nullable="false" />
+    <Property Name="BAR" Type="bit" Nullable="false" />
+    <Property Name="ACADEMIA" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="bancoexpenseonModelStoreContainer">
+    <EntitySet Name="HOTEL" EntityType="Self.HOTEL" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="bancoexpenseonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="HOTEL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RES_HOTEL" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ESTRELAS" Type="tinyint" Nullable="false" />
+          <Property Name="LOGRADOURO" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="NUMERO" Type="int" Nullable="false" />
+          <Property Name="BAIRRO" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="CIDADE" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ESTADO" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ESTACIONAMENTO" Type="bit" Nullable="false" />
+          <Property Name="PISCINA" Type="bit" Nullable="false" />
+          <Property Name="SAUNA" Type="bit" Nullable="false" />
+          <Property Name="WIFI" Type="bit" Nullable="false" />
+          <Property Name="RESTAURANTE" Type="bit" Nullable="false" />
+          <Property Name="BAR" Type="bit" Nullable="false" />
+          <Property Name="ACADEMIA" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="bancoexpenseonModelStoreContainer">
+          <EntitySet Name="HOTEL" EntityType="Self.HOTEL" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bancoexpenseonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="HOTEL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RES_HOTEL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ESTRELAS" Type="Byte" Nullable="false" />
+          <Property Name="LOGRADOURO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NUMERO" Type="Int32" Nullable="false" />
+          <Property Name="BAIRRO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CIDADE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ESTADO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ESTACIONAMENTO" Type="Boolean" Nullable="false" />
+          <Property Name="PISCINA" Type="Boolean" Nullable="false" />
+          <Property Name="SAUNA" Type="Boolean" Nullable="false" />
+          <Property Name="WIFI" Type="Boolean" Nullable="false" />
+          <Property Name="RESTAURANTE" Type="Boolean" Nullable="false" />
+          <Property Name="BAR" Type="Boolean" Nullable="false" />
+          <Property Name="ACADEMIA" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="bancoexpenseonEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HOTEL" EntityType="Self.HOTEL" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bancoexpenseonModelStoreContainer" CdmEntityContainer="bancoexpenseonEntities">
+          <EntitySetMapping Name="HOTEL">
+            <EntityTypeMapping TypeName="bancoexpenseonModel.HOTEL">
+              <MappingFragment StoreEntitySet="HOTEL">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+                <ScalarProperty Name="RES_HOTEL" ColumnName="RES_HOTEL" />
+                <ScalarProperty Name="ESTRELAS" ColumnName="ESTRELAS" />
+                <ScalarProperty Name="LOGRADOURO" ColumnName="LOGRADOURO" />
+                <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+                <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+                <ScalarProperty Name="CIDADE" ColumnName="CIDADE" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+                <ScalarProperty Name="ESTACIONAMENTO" ColumnName="ESTACIONAMENTO" />
+                <ScalarProperty Name="PISCINA" ColumnName="PISCINA" />
+                <ScalarProperty Name="SAUNA" ColumnName="SAUNA" />
+                <ScalarProperty Name="WIFI" ColumnName="WIFI" />
+                <ScalarProperty Name="RESTAURANTE" ColumnName="RESTAURANTE" />
+                <ScalarProperty Name="BAR" ColumnName="BAR" />
+                <ScalarProperty Name="ACADEMIA" ColumnName="ACADEMIA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

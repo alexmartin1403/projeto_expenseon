@@ -1,0 +1,117 @@
+﻿@model IEnumerable<APIExpenseon.Models.HOTEL>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RES_HOTEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESTRELAS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LOGRADOURO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NUMERO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BAIRRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CIDADE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESTADO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESTACIONAMENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PISCINA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SAUNA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WIFI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RESTAURANTE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACADEMIA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RES_HOTEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESTRELAS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOGRADOURO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NUMERO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BAIRRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CIDADE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESTADO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESTACIONAMENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PISCINA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SAUNA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WIFI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RESTAURANTE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACADEMIA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

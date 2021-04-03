@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bancoexpenseonModelStoreContainer" CdmEntityContainer="bancoexpenseonEntities">
+    <EntitySetMapping Name="HOTEL">
+      <EntityTypeMapping TypeName="bancoexpenseonModel.HOTEL">
+        <MappingFragment StoreEntitySet="HOTEL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="RES_HOTEL" ColumnName="RES_HOTEL" />
+          <ScalarProperty Name="ESTRELAS" ColumnName="ESTRELAS" />
+          <ScalarProperty Name="LOGRADOURO" ColumnName="LOGRADOURO" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+          <ScalarProperty Name="CIDADE" ColumnName="CIDADE" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="ESTACIONAMENTO" ColumnName="ESTACIONAMENTO" />
+          <ScalarProperty Name="PISCINA" ColumnName="PISCINA" />
+          <ScalarProperty Name="SAUNA" ColumnName="SAUNA" />
+          <ScalarProperty Name="WIFI" ColumnName="WIFI" />
+          <ScalarProperty Name="RESTAURANTE" ColumnName="RESTAURANTE" />
+          <ScalarProperty Name="BAR" ColumnName="BAR" />
+          <ScalarProperty Name="ACADEMIA" ColumnName="ACADEMIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
